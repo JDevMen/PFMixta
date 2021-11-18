@@ -14,5 +14,7 @@ public class copyCatScript : MonoBehaviour
         float posX = transform.position.x;
         float posZ = transform.position.z;
         Vector3 newPos = new Vector3(posX, posY, posZ);
+
+        transform.position = newPos;
     }
 }

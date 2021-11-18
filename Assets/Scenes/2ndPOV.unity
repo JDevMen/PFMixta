@@ -331,7 +331,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9ac4bb22bc6314eab1bd25b9a47831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cabeza: {fileID: 1584547030}
+  cabeza: {fileID: 1776243945}
+  camara: {fileID: 1584547030}
 --- !u!1 &586506507
 GameObject:
   m_ObjectHideFlags: 0

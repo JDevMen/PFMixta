@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class copyCatScript : MonoBehaviour
 {
-
+    public GameObject camara;
     public GameObject cabeza;
 
     // Update is called once per frame
     void Update()
     {
         float posY = cabeza.transform.position.y;
-        float posX = transform.position.x;
-        float posZ = transform.position.z;
+        float posX = camara.transform.position.x;
+        float posZ = camara.transform.position.z;
         Vector3 newPos = new Vector3(posX, posY, posZ);
 
-        transform.position = newPos;
+        camara.transform.position = newPos;
     }
 }

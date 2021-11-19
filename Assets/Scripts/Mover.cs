@@ -12,8 +12,10 @@ public class Mover : MonoBehaviour
 
     private bool isCompleted;
 
-    private void Start()
+    private void Update()
     {
+        Debug.Log("Entró a start");
+
         if (!rail)
         {
             Debug.Log("Entró a no hay riel");
@@ -21,12 +23,18 @@ public class Mover : MonoBehaviour
         }
 
         if (!isCompleted)
+        {
             Play();
+
+        }
     }
 
     private void Play()
     {
+        Debug.Log("Entró a play");
         transition += Time.deltaTime * 1 / 2.5f;
+
+        Debug.Log("Transition: " + transition);
 
         if (transition > 1)
         {

@@ -9,8 +9,8 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Crea objeto");
-        Instantiate(objectToSpawn);
+        //Debug.Log("Crea objeto");
+        //Instantiate(objectToSpawn);
         
     }
 
@@ -19,10 +19,10 @@ public class Spawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Crea objeto en el update");
-            Vector3 pos = Input.mousePosition;
-            Debug.Log(pos.x + "," + pos.y + "," + pos.z);
-            Instantiate(objectToSpawn, pos, Quaternion.identity);
+            //Debug.Log("Crea objeto en el update");
+            //Vector3 pos = Input.mousePosition;
+            //Debug.Log(pos.x + "," + pos.y + "," + pos.z);
+            //Instantiate(objectToSpawn, pos, Quaternion.identity);
         }
     }
 

@@ -7,13 +7,12 @@ public class Movement : MonoBehaviour
     [SerializeField] CharacterController controller;
     [SerializeField] float speed = 11f;
     [SerializeField] private float smoothInputSpeed = 0.2f;
-    [SerializeField] public float smoothSpeed = 0.5f;
+
     private Vector2 smoothInputVelocity;
 
     public void ReceiveInput(Vector2 pHorizontalInput)
     {
-        //horizontalInput = Vector2.SmoothDamp(horizontalInput, pHorizontalInput, ref smoothInputVelocity, smoothInputSpeed);
-        horizontalInput = Vector2.Lerp(horizontalInput, pHorizontalInput, smoothSpeed);
+        horizontalInput = Vector2.SmoothDamp(horizontalInput, pHorizontalInput, ref smoothInputVelocity, smoothInputSpeed);
 
         //horizontalInput = pHorizontalInput;
         Debug.Log(horizontalInput);

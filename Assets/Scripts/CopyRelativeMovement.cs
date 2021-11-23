@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class CopyRelativeMovement : MonoBehaviour
 {
-
+    
+    public GameObject anchorObject;
     public GameObject objectToCopy;
     // Start is called before the first frame update
+
+    public GameObject parentObject;
     void Start()
     {
 
@@ -16,7 +19,7 @@ public class CopyRelativeMovement : MonoBehaviour
     void Update()
     {
 
-        gameObject.transform.localPosition = objectToCopy.transform.localPosition;
+        gameObject.transform.position = parentObject.transform.position + (objectToCopy.transform.position - anchorObject.transform.position);
 
     }
 }

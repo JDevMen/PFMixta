@@ -5,6 +5,12 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     public Rail rail;
+    public Playmode mode;
+
+    public float speed = 2.5f;
+    public bool isReversed;
+    public bool isLooping;
+    public bool pingPong;
 
     private int currentSeg;
 
@@ -12,42 +18,86 @@ public class Mover : MonoBehaviour
 
     private bool isCompleted;
 
+
     private void Update()
     {
-        Debug.Log("Entró a start");
+        //Debug.Log("Entró a start");
 
         if (!rail)
         {
-            Debug.Log("Entró a no hay riel");
+            //Debug.Log("Entró a no hay riel");
             return;
         }
 
         if (!isCompleted)
         {
-            Play();
+            Play(!isReversed);
 
         }
     }
 
-    private void Play()
+    private void Play(bool forward = true)
     {
-        Debug.Log("Entró a play");
-        transition += Time.deltaTime * 1 / 2.5f;
 
-        Debug.Log("Transition: " + transition);
+        float m = (rail.nodes[currentSeg + 1].position - rail.nodes[currentSeg].position).magnitude;
+        float s = (Time.deltaTime * 1 / m) * speed;
+        transition += (forward) ? s : -s;
+
 
         if (transition > 1)
         {
             transition = 0;
             currentSeg++;
+            if (currentSeg == rail.nodes.Length - 1)
+            {
+                if (isLooping)
+                {
+                    if (pingPong)
+                    {
+                        transition = 1;
+                        currentSeg = rail.nodes.Length - 2;
+                        isReversed = !isReversed;
+                    }
+                    else
+                    {
+                        currentSeg = 0;
+                    }
+                }
+                else
+                {
+                    isCompleted = true;
+                    return;
+                }
+            }
         }
         else if (transition < 0)
         {
             transition = 1;
             currentSeg--;
+            if (currentSeg == -1)
+            {
+                if (isLooping)
+                {
+                    if (pingPong)
+                    {
+                        transition = 0;
+                        currentSeg = 0;
+                        isReversed = !isReversed;
+                    }
+                    else
+                    {
+                        currentSeg = rail.nodes.Length - 2;
+                    }
+                }
+                else
+                {
+                    isCompleted = true;
+                    return;
+                }
+            }
         }
 
-        transform.position = rail.LinearPos(currentSeg, transition);
+        transform.position = rail.posInRail(currentSeg, transition, mode);
         transform.rotation = rail.Orientation(currentSeg, transition);
     }
 

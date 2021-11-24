@@ -1,15 +1,36 @@
 using UnityEngine;
 using UnityEditor;
 
+public enum Playmode
+{
+    Linear,
+    Catmull
+}
+
+
 [ExecuteInEditMode]
 public class Rail : MonoBehaviour
 {
-    private Transform[] nodes;
+    public Transform[] nodes;
 
     private void Start()
     {
         nodes = GetComponentsInChildren<Transform>();
 
+    }
+
+
+    public Vector3 posInRail(int seg, float ratio, Playmode mode)
+    {
+        switch (mode)
+        {
+            default:
+            case Playmode.Linear:
+                return LinearPos(seg, ratio);
+            case Playmode.Catmull:
+                return CatmullPos(seg, ratio);
+
+        }
     }
 
     public Vector3 LinearPos(int seg, float ratio)
@@ -49,7 +70,13 @@ public class Rail : MonoBehaviour
         float t2 = ratio * ratio;
         float t3 = t2 * ratio;
 
-        float x = 0.5f * ((2.0f * p2.x) + (-p1.x + p3.x) * t2 + (2.0f * p1.x - 5.0f * p2.x + 4 * p3.x - p4.x) * t2 + (-p1.x + 3.0f *));
+        float x = 0.5f * ((2.0f * p2.x) + (-p1.x + p3.x) * ratio + (2.0f * p1.x - 5.0f * p2.x + 4 * p3.x - p4.x) * t2 + (-p1.x + 3.0f * p2.x - 3.0f * p3.x + p4.x) * t3);
+
+        float y = 0.5f * ((2.0f * p2.y) + (-p1.y + p3.y) * ratio + (2.0f * p1.y - 5.0f * p2.y + 4 * p3.y - p4.y) * t2 + (-p1.y + 3.0f * p2.y - 3.0f * p3.y + p4.y) * t3);
+
+        float z = 0.5f * ((2.0f * p2.z) + (-p1.z + p3.z) * ratio + (2.0f * p1.z - 5.0f * p2.z + 4 * p3.z - p4.z) * t2 + (-p1.z + 3.0f * p2.z - 3.0f * p3.z + p4.z) * t3);
+
+        return new Vector3(x, y, z);
     }
 
     public Quaternion Orientation(int seg, float ratio)

@@ -14,7 +14,7 @@ public class camaraFollow : MonoBehaviour
         Vector3 smoothedPos = Vector3.Lerp(transform.position, desiredPos, smoothSpeed * Time.deltaTime);
         transform.position = smoothedPos;
 
-        transform.LookAt(target);
+        //transform.LookAt(target);
     }
 
 

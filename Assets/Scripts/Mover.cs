@@ -7,6 +7,8 @@ public class Mover : MonoBehaviour
     public Rail rail;
     public Playmode mode;
 
+    public Transform target;
+
     public float speed = 2.5f;
     public bool isReversed;
     public bool isLooping;
@@ -98,7 +100,15 @@ public class Mover : MonoBehaviour
         }
 
         transform.position = rail.posInRail(currentSeg, transition, mode);
-        transform.rotation = rail.Orientation(currentSeg, transition);
+        if (target != null)
+        {
+            transform.LookAt(target);
+        }
+        else
+        {
+            transform.rotation = rail.Orientation(currentSeg, transition);
+
+        }
     }
 
 }

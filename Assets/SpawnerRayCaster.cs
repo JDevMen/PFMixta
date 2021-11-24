@@ -19,17 +19,23 @@ public class SpawnerRayCaster : MonoBehaviour
         }
         // Input.GetAxis("Right Controller Trigger");
         // Input.GetButton("");
-        var leftHandDevices = new List<UnityEngine.XR.InputDevice>();
-        UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.LeftHand, leftHandDevices);
+        List<UnityEngine.XR.InputDevice> devices = new List<UnityEngine.XR.InputDevice>(); 
 
-        if(leftHandDevices.Count == 1)
+        UnityEngine.XR.InputDevices.GetDevicesWithRole(UnityEngine.XR.InputDeviceRole.RightHanded, devices);
+
+        foreach (var device in devices)
         {
-            UnityEngine.XR.InputDevice device = leftHandDevices[0];
-            Debug.Log(string.Format("Device name '{0}' with role '{1}'", device.name, device.role.ToString()));
-        }
-        else if(leftHandDevices.Count > 1)
-        {
-            Debug.Log("Found more than one left hand!");
+            UnityEngine.XR.HapticCapabilities capabilities;
+            if (device.TryGetHapticCapabilities(out capabilities))
+            {
+                    if (capabilities.supportsImpulse)
+                    {
+                        uint channel = 0;
+                        float amplitude = 0.5f;
+                        float duration = 1.0f;
+                        device.SendHapticImpulse(channel, amplitude, duration);
+                    }
+            }
         }
     }
 

@@ -585,6 +585,22 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Spawn Activate",
+                    "type": "Button",
+                    "id": "896d6241-15e4-4a25-b194-124a17865bdc",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Spawn Cancel",
+                    "type": "Button",
+                    "id": "253a6e47-77c6-42b1-9a3a-bae326e597ef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -895,6 +911,28 @@
                     "action": "Translate Anchor",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "85dbfd91-3bb7-4d6f-8f97-f100c7ae7fee",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Spawn Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d662d742-ebad-4028-8278-c97d4218288b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Spawn Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

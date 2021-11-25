@@ -23,7 +23,7 @@ public class XR_Spawn_Manager : MonoBehaviour
 
         rayInteractor.enabled = false;
 
-        var activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Spawn Activate");
+        var activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
         activate.Enable();
         activate.performed += onSpawnActivate;
 

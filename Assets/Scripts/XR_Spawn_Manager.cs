@@ -59,23 +59,25 @@ public class XR_Spawn_Manager : MonoBehaviour
             _isActive = false;
             return;
         }
+        else
+        {
 
-
-        Debug.Log("Se activó el raycast");
-        Debug.Log("Coordenadas de raycast " + hit.point);
-        _isActive = false;
-        rayInteractor.enabled = false;
+            Debug.Log("Se activó el raycast");
+            Debug.Log("Coordenadas de raycast " + hit.point);
+            _isActive = false;
+            rayInteractor.enabled = false;
+        }
 
     }
 
-    private void onSpawnActivate(InputAction.CallbackContext ctx)
+    private void onSpawnActivate(InputAction.CallbackContext context)
     {
         Debug.LogWarning("Entró a spawn activate");
         rayInteractor.enabled = true;
         _isActive = true;
     }
 
-    private void onSpawnCancel(InputAction.CallbackContext ctx)
+    private void onSpawnCancel(InputAction.CallbackContext context)
     {
         Debug.LogWarning("Entró a spawn cancel");
         rayInteractor.enabled = false;

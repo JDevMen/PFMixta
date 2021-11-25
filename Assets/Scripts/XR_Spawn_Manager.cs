@@ -44,7 +44,11 @@ public class XR_Spawn_Manager : MonoBehaviour
             return;
 
         if (_thumbstick.triggered)
+        {
+            Debug.Log("Entró a thumbstick triggered");
             return;
+
+        }
 
         Debug.Log("Entró a revisar si hay alguna colisión con el raycast");
 
@@ -66,12 +70,14 @@ public class XR_Spawn_Manager : MonoBehaviour
 
     private void onSpawnActivate(InputAction.CallbackContext ctx)
     {
+        Debug.LogWarning("Entró a spawn activate");
         rayInteractor.enabled = true;
         _isActive = true;
     }
 
     private void onSpawnCancel(InputAction.CallbackContext ctx)
     {
+        Debug.LogWarning("Entró a spawn cancel");
         rayInteractor.enabled = false;
         _isActive = false;
 

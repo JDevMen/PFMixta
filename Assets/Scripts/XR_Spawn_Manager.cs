@@ -21,7 +21,7 @@ public class XR_Spawn_Manager : MonoBehaviour
     {
         Debug.Log("Entró a start");
 
-        rayInteractor.enabled = false;
+        //rayInteractor.enabled = false;
 
         var activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
         activate.Enable();
@@ -55,7 +55,7 @@ public class XR_Spawn_Manager : MonoBehaviour
         if (!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
         {
             Debug.Log("Raycast para spawn cancelado por falta de colisión");
-            rayInteractor.enabled = false;
+            //rayInteractor.enabled = false;
             _isActive = false;
             return;
         }
@@ -65,7 +65,7 @@ public class XR_Spawn_Manager : MonoBehaviour
             Debug.Log("Se activó el raycast");
             Debug.Log("Coordenadas de raycast " + hit.point);
             _isActive = false;
-            rayInteractor.enabled = false;
+            //rayInteractor.enabled = false;
         }
 
     }
@@ -73,14 +73,14 @@ public class XR_Spawn_Manager : MonoBehaviour
     private void onSpawnActivate(InputAction.CallbackContext context)
     {
         Debug.LogWarning("Entró a spawn activate");
-        rayInteractor.enabled = true;
+        //rayInteractor.enabled = true;
         _isActive = true;
     }
 
     private void onSpawnCancel(InputAction.CallbackContext context)
     {
         Debug.LogWarning("Entró a spawn cancel");
-        rayInteractor.enabled = false;
+        //rayInteractor.enabled = false;
         _isActive = false;
 
     }

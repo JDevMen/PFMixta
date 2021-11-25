@@ -569,6 +569,17 @@ LightProbeGroup:
   - {x: -0.8738291, y: 0.51661086, z: 2.5225298}
   - {x: -1.3810283, y: 0.51661086, z: 2.9244456}
   m_Dering: 0
+--- !u!114 &1474257803 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6670851534673675175, guid: 0cb956fcbec8450449dce3e0ad8ac325, type: 3}
+  m_PrefabInstance: {fileID: 6670851536094453804}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1556901916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -614,6 +625,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85dfab9623c67784fa7894de63cd1604, type: 3}
+--- !u!1 &1899612460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6670851535309547776, guid: 0cb956fcbec8450449dce3e0ad8ac325, type: 3}
+  m_PrefabInstance: {fileID: 6670851536094453804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1899612461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899612460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85aaa2bad1a932e48a6a844170a9268c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rayInteractor: {fileID: 1474257803}
 --- !u!1 &1904166338
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6670851534673675175, guid: 0cb956fcbec8450449dce3e0ad8ac325, type: 3}
       propertyPath: m_Velocity
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6670851534917605192, guid: 0cb956fcbec8450449dce3e0ad8ac325, type: 3}
       propertyPath: m_RootOrder

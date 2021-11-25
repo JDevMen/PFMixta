@@ -19,6 +19,8 @@ public class XR_Spawn_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Entró a start");
+
         rayInteractor.enabled = false;
 
         var activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Spawn Activate");

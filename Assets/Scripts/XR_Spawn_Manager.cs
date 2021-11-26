@@ -65,7 +65,7 @@ public class XR_Spawn_Manager : MonoBehaviour
             Debug.Log("Se activó el raycast");
             Debug.Log("Coordenadas de raycast " + hit.point);
             _isActive = false;
-            //rayInteractor.enabled = false;
+            rayInteractor.enabled = false;
         }
 
     }

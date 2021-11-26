@@ -55,7 +55,7 @@ public class XR_Spawn_Manager : MonoBehaviour
         if (!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
         {
             Debug.Log("Raycast para spawn cancelado por falta de colisión");
-            //rayInteractor.enabled = false;
+            rayInteractor.enabled = false;
             _isActive = false;
             return;
         }

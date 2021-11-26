@@ -11,7 +11,7 @@ public class XR_Spawn_Manager : MonoBehaviour
 
     [SerializeField] private XRRayInteractor rayInteractor;
 
-    private InputAction _thumbstick;
+    private InputAction _trigger;
 
 
     bool _isActive = false;
@@ -19,21 +19,21 @@ public class XR_Spawn_Manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Entró a start");
+        Debug.Log("Entrï¿½ a start");
 
         rayInteractor.enabled = false;
 
-        var activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Activate");
+        var activate = actionAsset.FindActionMap("XRI RightHand").FindAction("Spawn Activate");
         activate.Enable();
         activate.performed += onSpawnActivate;
 
 
-        var cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Mode Cancel");
+        var cancel = actionAsset.FindActionMap("XRI RightHand").FindAction("Spawn Cancel");
         cancel.Enable();
         cancel.performed += onSpawnCancel;
 
-        _thumbstick = actionAsset.FindActionMap("XRI RightHand").FindAction("Move");
-        _thumbstick.Enable();
+        _trigger = actionAsset.FindActionMap("XRI RightHand").FindAction("Spawn trigger");
+        _trigger.Enable();
 
     }
 
@@ -43,24 +43,24 @@ public class XR_Spawn_Manager : MonoBehaviour
         if (!_isActive)
             return;
 
-        if (_thumbstick.triggered)
+        if (!_trigger.triggered)
         {
-            Debug.Log("Entró a thumbstick triggered");
+            Debug.Log("Entrï¿½ a thumbstick triggered");
             return;
 
         }
 
-        Debug.Log("Entró a revisar si hay alguna colisión con el raycast");
+        Debug.Log("Entrï¿½ a revisar si hay alguna colisiï¿½n con el raycast");
 
-        if (!rayInteractor.GetCurrentRaycastHit(out RaycastHit hit))
+        if (!rayInteractor.TryGetCurrent3DRaycastHit(out RaycastHit hit))
         {
-            Debug.Log("Raycast para spawn cancelado por falta de colisión");
+            Debug.Log("Raycast para spawn cancelado por falta de colisiï¿½n");
             rayInteractor.enabled = false;
             _isActive = false;
             return;
         }
 
-        Debug.Log("Se activó el raycast");
+        Debug.Log("Se activï¿½ el raycast");
         Debug.Log("Coordenadas de raycast " + hit.point);
         _isActive = false;
         rayInteractor.enabled = false;
@@ -69,14 +69,14 @@ public class XR_Spawn_Manager : MonoBehaviour
 
     private void onSpawnActivate(InputAction.CallbackContext context)
     {
-        Debug.LogWarning("Entró a spawn activate");
+        Debug.LogWarning("Entrï¿½ a spawn activate");
         rayInteractor.enabled = true;
         _isActive = true;
     }
 
     private void onSpawnCancel(InputAction.CallbackContext context)
     {
-        Debug.LogWarning("Entró a spawn cancel");
+        Debug.LogWarning("Entrï¿½ a spawn cancel");
         rayInteractor.enabled = false;
         _isActive = false;
 

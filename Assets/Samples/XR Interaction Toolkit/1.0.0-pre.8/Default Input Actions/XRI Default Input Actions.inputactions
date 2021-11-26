@@ -939,7 +939,7 @@
                     "id": "fca0bf96-ddb5-431b-aa32-2634fb7d973a",
                     "path": "<XRController>{RightHand}/primary2DAxis",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "StickDeadzone",
                     "groups": "Continuous Move",
                     "action": "Move",
                     "isComposite": false,

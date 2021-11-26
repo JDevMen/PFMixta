@@ -644,6 +644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   rayInteractor: {fileID: 1474257803}
+  clone: {fileID: 5727453830024732086, guid: 0e4da90f28250fa48b7e9f309befcacc, type: 3}
 --- !u!1 &1904166338
 GameObject:
   m_ObjectHideFlags: 0

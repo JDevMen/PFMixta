@@ -14,6 +14,8 @@ public class XR_Spawn_Manager : MonoBehaviour
     private InputAction _trigger;
 
 
+    public GameObject clone;
+
     bool _isActive = false;
 
     // Start is called before the first frame update
@@ -62,6 +64,8 @@ public class XR_Spawn_Manager : MonoBehaviour
 
         Debug.Log("Se activ� el raycast");
         Debug.Log("Coordenadas de raycast " + hit.point);
+
+        Instantiate(clone, hit.point, Quaternion.identity);
         _isActive = false;
         rayInteractor.enabled = false;
 

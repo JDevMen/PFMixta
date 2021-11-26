@@ -45,7 +45,7 @@ public class XR_Spawn_Manager : MonoBehaviour
 
         if (!_trigger.triggered)
         {
-            Debug.Log("Entr� a thumbstick triggered");
+            Debug.Log("Entr� a thumbstick not triggered");
             return;
 
         }

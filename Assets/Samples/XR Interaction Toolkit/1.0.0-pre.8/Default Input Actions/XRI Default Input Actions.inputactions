@@ -665,7 +665,7 @@
                     "path": "<XRController>{RightHand}/Primary2DAxis",
                     "interactions": "Sector(directions=-1)",
                     "processors": "",
-                    "groups": "Noncontinuous Move",
+                    "groups": "",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
                     "isPartOfComposite": false

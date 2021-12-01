@@ -5,9 +5,9 @@ using UnityEngine;
 public class copyCatScript : MonoBehaviour
 {
     // public GameObject cabeza;
-    public GameObject camara;
+    private GameObject camara;
 
-    public GameObject rigg;
+    private GameObject rigg;
 
     private Vector3 lastPositionCamera;
 
@@ -23,10 +23,14 @@ public class copyCatScript : MonoBehaviour
 }
 
     void Start(){
+        camara = GameObject.FindWithTag("MainCamera");
+        rigg = GameObject.FindWithTag("Rig");
         cabeza.transform.position = new Vector3(cabeza.transform.position.x, camara.transform.position.y, cabeza.transform.position.z);
         lastPositionCamera = camara.transform.position;
         timesCalled++;
         Debug.Log("Times Called: " + timesCalled);
+
+        
     }
 
     // Update is called once per frame
@@ -56,21 +60,7 @@ public class copyCatScript : MonoBehaviour
 
         lastPositionCamera = newPositionCamera;
         lastRotationCamera = newRotationCamera;
-        // float posY = camara.transform.position.y;
-        // float posX = cabeza.transform.position.x;
-        // float posZ = cabeza.transform.position.z;
-        // Vector3 newPos = new Vector3(posX, posY, posZ);
 
-        // cabeza.transform.position = newPos;
-        // Vector3 velocityCam = camara.GetComponent<Rigidbody>().velocity;
-        // Vector3 velocityRigg = rigg.GetComponent<Rigidbody>().velocity;
-
-        // Debug.Log("Velocity Cam: "+ velocityCam);
-
-        // Debug.Log("Velocity Rigg: "+ velocityRigg);
-
-        // Debug.Log("Position camara: "+ camara.transform.position);
-        // Debug.Log("Position rigg: "+ rigg.transform.position);
     }
 
     void FixedUpdate(){

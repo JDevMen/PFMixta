@@ -5,13 +5,17 @@ using UnityEngine;
 public class CopyRelativeMovement : MonoBehaviour
 {
     
-    public GameObject anchorObject;
-    public GameObject objectToCopy;
+    private GameObject anchorObject;
+    private GameObject objectToCopy;
+    public string anchorTag;
+    public string objtectToCopyTag;
     // Start is called before the first frame update
 
     public GameObject parentObject;
     void Start()
     {
+        anchorObject = GameObject.FindWithTag(anchorTag);
+        objectToCopy = GameObject.FindWithTag(objtectToCopyTag);
 
     }
 

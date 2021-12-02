@@ -993,11 +993,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1458279065768762900, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
@@ -3132,11 +3132,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_IsKinematic
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1458279065768762900, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}

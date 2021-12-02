@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class playerScript : MonoBehaviour
 {
-    GameObject initialBall;
     bool gameStarted = false;
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (!gameStarted && collision.gameObject == initialBall)
+        if (!gameStarted && collision.gameObject.CompareTag("Ball"))
         {
-            initialBall.GetComponent<Rigidbody>().useGravity = true;
+            collision.gameObject.GetComponent<Rigidbody>().useGravity = true;
             gameStarted = true;
         }
     }

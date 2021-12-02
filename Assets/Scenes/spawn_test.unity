@@ -923,6 +923,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6670851536094453807}
     m_Modifications:
+    - target: {fileID: 470065126922644278, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.349613
+      objectReference: {fileID: 0}
+    - target: {fileID: 1305572193067059027, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_TagString
+      value: Raqueta
+      objectReference: {fileID: 0}
     - target: {fileID: 1458279065768762900, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: anchorTag
       value: 
@@ -991,6 +999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: raquetaDerecha
       objectReference: {fileID: 0}
+    - target: {fileID: 3444079086661835997, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_TagString
+      value: Raqueta
+      objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -999,6 +1011,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8894261625230345710, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 760f0cbfcad761a46b448b442fe0319d, type: 2}
     m_RemovedComponents:
     - {fileID: 1458279065768762900, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
@@ -1110,8 +1126,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424801455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.73, y: 3.209999, z: -11.99}
-  m_LocalScale: {x: 0.42201003, y: 0.42201003, z: 0.42200997}
+  m_LocalPosition: {x: -14.589, y: 3.41, z: -13.242}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -1124,7 +1140,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424801455}
   serializedVersion: 2
-  m_Mass: 0.6
+  m_Mass: 0.06
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -3070,6 +3086,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6670851536094453808}
     m_Modifications:
+    - target: {fileID: 1305572193067059027, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_TagString
+      value: Raqueta
+      objectReference: {fileID: 0}
     - target: {fileID: 2690260812106705947, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3130,6 +3150,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: raquetaDerecha
       objectReference: {fileID: 0}
+    - target: {fileID: 3444079086661835997, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -3137,6 +3165,10 @@ PrefabInstance:
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_CollisionDetection
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8842173595547004468, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1458279065768762900, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}

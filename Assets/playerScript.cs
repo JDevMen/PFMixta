@@ -14,10 +14,10 @@ public class playerScript : MonoBehaviour
 
         Debug.Log("Entró a colisión");
 
-        if (!gameStarted && collision.gameObject.CompareTag("Ball"))
+        if (!gameStarted && collision.gameObject.tag == "Ball")
         {
             Debug.Log("entró a colisión con pelota");
-            collision.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            collision.rigidbody.useGravity = true;
             gameStarted = true;
         }
     }

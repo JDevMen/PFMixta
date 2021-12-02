@@ -9,6 +9,7 @@ TagManager:
   - LeftController
   - Piso
   - Ball
+  - Raqueta
   layers:
   - Default
   - TransparentFX

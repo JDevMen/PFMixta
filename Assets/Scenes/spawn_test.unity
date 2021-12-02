@@ -991,7 +991,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: raquetaDerecha
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1458279065768762900, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
 --- !u!1 &1424801455
 GameObject:

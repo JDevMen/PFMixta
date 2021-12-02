@@ -11,6 +11,9 @@ public class playerScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        Debug.Log("Entró a colisión");
+
         if (!gameStarted && collision.gameObject.CompareTag("Ball"))
         {
             Debug.Log("entró a colisión con pelota");

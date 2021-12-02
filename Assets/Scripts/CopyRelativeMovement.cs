@@ -24,6 +24,7 @@ public class CopyRelativeMovement : MonoBehaviour
     {
 
         gameObject.transform.position = parentObject.transform.position + (objectToCopy.transform.position - anchorObject.transform.position);
+        gameObject.transform.eulerAngles = parentObject.transform.eulerAngles + (objectToCopy.transform.eulerAngles - anchorObject.transform.eulerAngles);
 
     }
 }

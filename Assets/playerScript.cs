@@ -19,7 +19,7 @@ public class playerScript : MonoBehaviour
         if (!gameStarted && collision.gameObject == initialBall)
         {
             initialBall.GetComponent<Rigidbody>().useGravity = true;
-
+            gameStarted = true;
         }
     }
 }

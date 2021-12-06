@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 824219110671386758}
   - component: {fileID: 2324868644625593389}
   - component: {fileID: 8833682759428292678}
+  - component: {fileID: 5906960597082364946}
   m_Layer: 0
   m_Name: raquetaIzquierda
   m_TagString: Untagged
@@ -460,6 +461,30 @@ MonoBehaviour:
   anchorTag: MainCamera
   objtectToCopyTag: LeftController
   parentObject: {fileID: 4352199015745754752}
+--- !u!114 &5906960597082364946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780958642360205737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43b564c309205c4f956b27655135638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2473887588350203236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4976341295060680423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43b564c309205c4f956b27655135638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7693370426682401338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -521,6 +546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+--- !u!1 &4976341295060680423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3444079086661835997, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
+  m_PrefabInstance: {fileID: 7693370426682401338}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5733625828875456033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2690260812106705947, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}

@@ -13,6 +13,9 @@ public class XR_Spawn_Manager : MonoBehaviour
 
     private InputAction _trigger;
 
+    public int numClones = 5;
+
+    private int numClonesActive = 0;
 
     public GameObject clone;
 
@@ -65,7 +68,11 @@ public class XR_Spawn_Manager : MonoBehaviour
         Debug.Log("Se activ� el raycast");
         Debug.Log("Coordenadas de raycast " + hit.point);
 
-        Instantiate(clone, new Vector3(hit.point.x, hit.point.y + 0.2f, hit.point.z), Quaternion.identity);
+        if (numClonesActive <= numClones)
+        {
+            Instantiate(clone, new Vector3(hit.point.x, hit.point.y + 0.2f, hit.point.z), Quaternion.identity);
+            numClonesActive++;
+        }
         _isActive = false;
         rayInteractor.enabled = false;
 

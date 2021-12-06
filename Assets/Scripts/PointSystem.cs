@@ -21,4 +21,9 @@ public class PointSystem : MonoBehaviour
         return numberOfCollissions;
     }
 
+    public void sumCollision()
+    {
+        numberOfCollissions++;
+    }
+
 }

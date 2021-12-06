@@ -10,6 +10,7 @@ TagManager:
   - Piso
   - Ball
   - Raqueta
+  - pointSystem
   layers:
   - Default
   - TransparentFX

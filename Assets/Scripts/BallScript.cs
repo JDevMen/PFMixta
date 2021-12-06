@@ -34,23 +34,23 @@ public class BallScript : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(prevBallposition, gameObject.transform.position, out hit))
-        {
-            if (hit.collider.tag == "Raqueta")
-            {
-                Debug.Log("Raycast hit: " + hit.transform.position);
-                gameObject.transform.position = hit.transform.position;
-            }
+    //void FixedUpdate()
+    //{
+    //    RaycastHit hit;
+    //    if (Physics.Raycast(prevBallposition, gameObject.transform.position, out hit))
+    //    {
+    //        if (hit.collider.tag == "Raqueta")
+    //        {
+    //            Debug.Log("Raycast hit: " + hit.transform.position);
+    //            gameObject.transform.position = hit.transform.position;
+    //        }
 
-        }
-
-
+    //    }
 
 
-        prevBallposition = gameObject.transform.position;
-    }
+
+
+    //    prevBallposition = gameObject.transform.position;
+    //}
 
 }

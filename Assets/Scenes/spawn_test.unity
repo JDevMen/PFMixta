@@ -3478,6 +3478,10 @@ PrefabInstance:
       propertyPath: objectGenerated
       value: 
       objectReference: {fileID: 717906846183972166, guid: 3f8bc4469424cce4d9a304f6f50be53a, type: 3}
+    - target: {fileID: 5000752099479237080, guid: 1cc060331d48ad747b62598e117b7b18, type: 3}
+      propertyPath: timeBetweenGenerations
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5000752099479237081, guid: 1cc060331d48ad747b62598e117b7b18, type: 3}
       propertyPath: m_RootOrder
       value: 9

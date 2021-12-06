@@ -18,7 +18,7 @@ public class scriptRaqueta : MonoBehaviour
         if (collision.gameObject.tag == "Ball")
         {
             pointSystem.sumCollision();
-            Debug.Log("Detected Collission with raquet ");
+            Debug.LogWarning("Detected Collission with raquet ");
             Destroy(collision.gameObject);
         }
     }

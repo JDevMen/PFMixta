@@ -68,7 +68,7 @@ public class XR_Spawn_Manager : MonoBehaviour
         Debug.Log("Se activ� el raycast");
         Debug.Log("Coordenadas de raycast " + hit.point);
 
-        if (numClonesActive <= numClones)
+        if (numClonesActive < numClones)
         {
             Instantiate(clone, new Vector3(hit.point.x, hit.point.y + 0.2f, hit.point.z), Quaternion.identity);
             numClonesActive++;

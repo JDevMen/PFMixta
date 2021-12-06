@@ -1466,11 +1466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_CollisionDetection
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8894261625230345710, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_Material
@@ -3822,11 +3822,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7291770389315231534, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_CollisionDetection
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8842173595547004468, guid: d5e6a8b430f40bf4c89c8f0031579fae, type: 3}
       propertyPath: m_Enabled

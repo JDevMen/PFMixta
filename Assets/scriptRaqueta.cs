@@ -11,6 +11,8 @@ public class scriptRaqueta : MonoBehaviour
     void Start()
     {
         pointSystem = GameObject.FindGameObjectWithTag("pointSystem").GetComponent<PointSystem>();
+        Debug.LogWarning(pointSystem);
+
     }
 
     void OnCollisionEnter(Collision collision)

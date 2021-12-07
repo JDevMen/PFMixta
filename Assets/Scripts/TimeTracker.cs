@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class TimeTracker : MonoBehaviour
 {
@@ -12,9 +13,11 @@ public class TimeTracker : MonoBehaviour
 
     public float playTimeInSeconds;
 
+    private Text text;
 
 
-void startPlaying(){
+
+public void startPlaying(){
     isPlaying = true;
     secondsPlayed = 0;
 }
@@ -23,7 +26,10 @@ void startPlaying(){
     // Start is called before the first frame update
     void Start()
     {
+        text = gameObject.GetComponent<Text>();
         
+        Debug.LogWarning(text);
+
     }
 
     // Update is called once per frame
@@ -31,6 +37,8 @@ void startPlaying(){
     {
         if(isPlaying && secondsPlayed < playTimeInSeconds){
             secondsPlayed += Time.deltaTime;
+            Debug.Log("Seconds: " + secondsPlayed);
+            text.text = "Tiempo: " + Math.Round(secondsPlayed, 1) + " s";
         }
         else{
             isPlaying = false;

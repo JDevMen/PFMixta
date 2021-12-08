@@ -93,7 +93,9 @@ public class Rail : MonoBehaviour
     {
         for (int i = 0; i < nodes.Length - 1; i++)
         {
+            #if UNITY_EDITOR
             Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3f);
+            #endif
         }
     }
 }

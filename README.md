@@ -73,7 +73,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Descripcion Del Proyecto
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![image](https://user-images.githubusercontent.com/47058600/145689292-589b95b4-d78d-4fc1-8556-480745539bb9.png)
 
 Descripción y características: Desarrollar una aplicación en el que el 2nd POV tenga una interacción lo suficientemente útil e intuitiva. Para la implementación de uso de este tipo de interacción se planteó un juego en el que el jugador tiene la capacidad de crear clones para capturar balones. Estos balones caen desde arriba en una pista cerrada, si los clones con las manos que básicamente es la copia de los movimientos a modo de espejo que la persona original toca los balones gana puntos, en caso de que toque el suelo pierde ese punto. 
 

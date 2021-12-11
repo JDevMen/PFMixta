@@ -201,7 +201,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Julián Mendoza - [@JDevMen](https://github.com/JDevMen) - allan9899@gmail.com
+
+Diego Gomez - [@diegommezp28](https://github.com/diegommezp28) - allan9899@gmail.com
+
+Allan Roy Corinaldi - [@ar-corinaldi](https://github.com/ar-corinaldi) - allan9899@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 

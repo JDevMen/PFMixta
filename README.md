@@ -29,23 +29,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    ![image](https://user-images.githubusercontent.com/47058600/145689339-8cbdf7fc-76b7-4501-bcbf-90a8a50a39f3.png)
-  </a>
-
   <h3 align="center">2nd POV</h3>
-
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>README</strong></a>
+    <a href="https://github.com/JDevMen/PFMixta"><strong>README</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/JDevMen/PFMixta">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/JDevMen/PFMixta/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/JDevMen/PFMixta/issues">Request Feature</a>
   </p>
 </div>
 
@@ -53,7 +48,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Tabla de Contenidos</summary>
   <ol>
     <li>
       <a href="#descripcion-del-proyecto">Descripción del Proyecto</a>
@@ -64,7 +59,6 @@
     <li><a href="#contributing">Instrucciones de descarga del código para desarrollo</a></li>
     <li><a href="#license">Instrucciones de uso del EJECUTABLE</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -86,7 +80,7 @@ Características:
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -108,7 +102,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * OpenXR plugin
 * Valve Index (dispositivo VR)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -139,7 +133,7 @@ _Below is an example of how you can instruct your audience on installing and set
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -150,7 +144,7 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -167,7 +161,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -185,7 +179,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -194,7 +188,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 
@@ -209,26 +203,7 @@ Allan Roy Corinaldi - [@ar-corinaldi](https://github.com/ar-corinaldi) - allan98
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->

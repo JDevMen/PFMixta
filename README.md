@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    ![image](https://user-images.githubusercontent.com/47058600/145689339-8cbdf7fc-76b7-4501-bcbf-90a8a50a39f3.png)
   </a>
 
   <h3 align="center">2nd POV</h3>

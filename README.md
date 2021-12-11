@@ -29,18 +29,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h3 align="center">2nd POV</h3>
+  <h3 align="center">Exploración de Segunda Persona en Realidad Virtual</h3>
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/JDevMen/PFMixta"><strong>README</strong></a>
     <br />
     <br />
-    <a href="https://github.com/JDevMen/PFMixta">View Demo</a>
+    <a href="#demo">Ver Demo</a>
     ·
-    <a href="https://github.com/JDevMen/PFMixta/issues">Report Bug</a>
+    <a href="https://github.com/JDevMen/PFMixta/issues">Reportar un Bug</a>
     ·
-    <a href="https://github.com/JDevMen/PFMixta/issues">Request Feature</a>
+    <a href="https://github.com/JDevMen/PFMixta/issues">Solicitar una Feature</a>
   </p>
 </div>
 
@@ -140,9 +140,7 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- DEMO -->
 ## Demo
 
-Uploading VR View 2021-12-07 17-40-05.mp4…
-
-
+[![Exploración de Segunda Persona en Realidad Virtual](https://img.youtube.com/vi/vFS9nob_-q8/0.jpg)](https://www.youtube.com/watch?v=vFS9nob_-q8)
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
 

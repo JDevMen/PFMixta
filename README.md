@@ -109,30 +109,29 @@ Frameworks y librerías usadas para el desarrollo de la aplicación:
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Clone the repo
+1. Clone el repositorio
    ```sh
    git clone https://github.com/JDevMen/PFMixta.git
    ```
-2. Connect to Steam
-3. Connect your Index Valve to play on Steam
-4. Use SteamVR
-5. Play on Unity
-6. Happy Game!
+2. Conectese a la aplicación "Steam".
+3. Conecte su dispositivo Valve Index para que sea reconocido por "Steam".
+4. Ejecute la aplicación de "SteamVR" dentro de "Steam". 
+5. Abra el archivo descargado dentro de Unity con versión 2020.3.16 o superior. 
+6. Agregue los paquetes descritos en la sección de "tecnologías usadas" en caso de no estar agregados. 
+7. Ya puede editar y probar el proyecto..
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 ### Instrucciones De Ejecutable
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Clone the repo
+1. Clone el repositorio
    ```sh
    git clone https://github.com/JDevMen/PFMixta.git
    ```
-2. Unzip PFBuild.zip en /PFMixta 
-3. Ir a la carpeta extraída /PFMixta/PFBuild
-4. Ejecutar PFMixta.exe
-5. Happy Game!
+2. Descomprima el archivo PFBuild.zip en /PFMixta.
+3. Ir a la carpeta extraída /PFMixta/PFBuild.
+4. Ejecutar PFMixta.exe.
+5. Juegue!
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
@@ -158,9 +157,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Julián Mendoza - [@JDevMen](https://github.com/JDevMen) - allan9899@gmail.com
+Julián Mendoza - [@JDevMen](https://github.com/JDevMen) - jd.mendozar@uniandes.edu.co
 
-Diego Gomez - [@diegommezp28](https://github.com/diegommezp28) - allan9899@gmail.com
+Diego Gomez - [@diegommezp28](https://github.com/diegommezp28) - da.gomezp@uniandes.edu.co
 
 Allan Roy Corinaldi - [@ar-corinaldi](https://github.com/ar-corinaldi) - allan9899@gmail.com
 

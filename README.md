@@ -56,7 +56,8 @@
     <li><a href="#tecnologias-usadas">Tecnologías Usadas</a></li>
     <li><a href="#prerequisitos">Prerequisitos</a></li>
     <li><a href="#demo">Demo</a></li>
-    <li><a href="#contributing">Instrucciones de descarga del código para desarrollo</a></li>
+    <li><a href="#instrucciones-de-descarga">Instrucciones de descarga del código para desarrollo</a></li>
+    <li><a href="#instrucciones-de-ejecutable">Instrucciones de ejecutable</a></li>
     <li><a href="#license">Instrucciones de uso del EJECUTABLE</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -99,32 +100,43 @@ Frameworks y librerías usadas para el desarrollo de la aplicación:
 <!-- GETTING STARTED -->
 ### Prerequisitos
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [Unity 2020](https://docs.unity3d.com/Manual/index.html)
+* [Valve Index VR](https://www.amazon.com/-/es/Valve-Index-VR-Full-Kit/dp/B07VPRVBFF)
+* [SteamVR](https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647)
+* [Steam](https://store.steampowered.com/?l=spanish)
 
-### Installation
+
+### Instrucciones De Descarga
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/JDevMen/PFMixta.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+2. Connect to Steam
+3. Connect your Index Valve to play on Steam
+4. Use SteamVR
+5. Play on Unity
+6. Happy Game!
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
+### Instrucciones De Ejecutable
+
+_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/JDevMen/PFMixta.git
+   ```
+2. Unzip PFBuild.zip en /PFMixta 
+3. Ir a la carpeta extraída /PFMixta/PFBuild
+4. Ejecutar PFMixta.exe
+5. Happy Game!
+
+<p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
 
 <!-- DEMO -->

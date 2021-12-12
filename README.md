@@ -31,8 +31,6 @@
 <div align="center">
   <h3 align="center">Exploración de Segunda Persona en Realidad Virtual</h3>
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
     <a href="https://github.com/JDevMen/PFMixta"><strong>README</strong></a>
     <br />
     <br />

@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Rig
+  - RightController
+  - LeftController
+  - Piso
+  - Ball
+  - Raqueta
+  - pointSystem
   layers:
   - Default
   - TransparentFX

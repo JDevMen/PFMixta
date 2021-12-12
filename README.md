@@ -69,16 +69,12 @@
 
 ![image](https://user-images.githubusercontent.com/47058600/145689292-589b95b4-d78d-4fc1-8556-480745539bb9.png)
 
-Descripción y características: Desarrollar una aplicación en el que el 2nd POV tenga una interacción lo suficientemente útil e intuitiva. Para la implementación de uso de este tipo de interacción se planteó un juego en el que el jugador tiene la capacidad de crear clones para capturar balones. Estos balones caen desde arriba en una pista cerrada, si los clones con las manos que básicamente es la copia de los movimientos a modo de espejo que la persona original toca los balones gana puntos, en caso de que toque el suelo pierde ese punto. 
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Descripción: Desarrollar una aplicación para experimentar la segunda persona en realidad virtual es la idea del proyecto. El tipo de interacción planteado en el juego le da la capacidad al jugador de crear sus propios clones e imitar sus movimientos para capturar balones. Estos balones caen desde arriba en una pista cerrada de manera casi que aleatoria, si los clones o la persona original toca los balones gana puntos, en caso de que toque el suelo pierde ese punto. 
 
 Características:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+* Experimentar en el desarrollo de la segunda persona
+* Realizar pruebas con el juego en segunda persona
+* Realizar una encuesta con las personas que participaron en el juego
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
@@ -86,21 +82,15 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 ### Tecnologias Usadas
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Frameworks y librerías usadas para el desarrollo de la aplicación:
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* Unity 2020
-* Entorno de Desarrollo Integrado (VSCode)
-* SteamVR
-* OpenXR plugin
-* Valve Index (dispositivo VR)
+* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [Unity 2020](https://docs.unity3d.com/Manual/index.html)
+* [OpenXR Plugin](https://docs.unity3d.com/Packages/com.unity.xr.openxr@0.1/manual/index.html)
+* [ProBuilder Plugin](https://unity.com/es/features/probuilder)
+* [ProGrids Plugin](https://docs.unity3d.com/Manual/com.unity.progrids.html)
+* [Input System Plugin](https://docs.unity3d.com/Manual/com.unity.inputsystem.html)
+
 
 <p align="right">(<a href="#top">regresar al inicio</a>)</p>
 
